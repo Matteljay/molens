@@ -26,10 +26,12 @@ Molens is a web application for visualizing the position and direction of wind m
 - **Apply** changes the behavior of the *Repair* button on any defective wind mill. When you press that button, the specified URL will be used with matching wind mill `{id}` for triggering the *repair* communication signal to any web capable back-end.
 
 Note that the required format of a single object in the JSON array is:
-    `{ "id": Number/String, "defective": Boolean, "angle": Number(0 - 360), "position": Array(of 2 numbers), "meta": Anything }`
+
+    { "id": Number/String, "defective": Boolean, "angle": Number(0 - 360), "position": Array(of 2 numbers), "meta": Anything }
 
 An exceptional object is:
-    `{ "id": "generalWindAngle", "angle": Number(0 - 360) }`
+
+    { "id": "generalWindAngle", "angle": Number(0 - 360) }
 
 This is optional and will determine the orientation of the purple arrow for general wind direction.
 
